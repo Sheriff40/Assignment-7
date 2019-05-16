@@ -25,14 +25,14 @@ body
 #navbar-brand~nav
 {
 	float:right;
+	padding:15px 0px;
 }
 
 #navbar-brand~nav ul
 {
 	padding:0px;
 	margin:0px;
-	padding:25px 0;
-	height:50px;
+
 }
 
 
@@ -40,8 +40,7 @@ body
 {
 	float:left;
 	list-style: none;
-	margin-right:5px;
-	padding:5px;
+
 }
 
 #navbar-brand~nav ul li a
@@ -49,7 +48,7 @@ body
 	display:block;
 	text-decoration: none;
 	color:white;
-	width:100%;
+	padding:10px;
 	font-size: 0.8em;
 	font-weight: bold;
 }
@@ -126,23 +125,35 @@ section
 
 	body{
 		width: 95%;
-		padding: 10px 0;
+		padding:0;
+		padding-top:10%;
+		margin:0 auto;
 	}
 
 	#mobile-header
 	{
 		display: block;
+		width: 100%;
+		position: relative;
 	}
 	
-	#hoverable
+	#hoverable .burger-icon
 	{
-		display: inline;
+		right:5%;
+		position: absolute;
+		top:0px;
 	}
 
 	#hoverable:hover #mobile-navbar ul
 	{
 		display: block;
 	}
+
+	#mobile-navbar-brand h2
+	{
+		display: inline;
+	}
+
 
 	#mobile-navbar
 	{
@@ -158,6 +169,8 @@ section
 		list-style: none;
 		padding: 0px;
 		margin: 0px;
+		left:45%;
+		top:-1em;
 		text-align: center;
 		background: black;
 	}
@@ -171,16 +184,13 @@ section
 		border-bottom: 1px solid white;
 	}
 
-	#mobile-navbar-brand
-	{
-		text-align: center;
-	}
-	#mobile-navbar-brand h2
-	{
-		display: inline;
-	
-	}
 
+	#mobile-navbar ul li a:hover
+	{
+		background: white;
+		color: black;
+	}
+	
 	section
 	{
 		flex-wrap: wrap;
@@ -201,7 +211,8 @@ section
 }
 
 
-@media screen and (min-width: 600px) and (max-width: 860px){
+@media screen and (min-width: 600px) and (max-width: 880px){
+		
 		
 	#header
 	{
@@ -209,25 +220,36 @@ section
 	}
 
 	body{
-		width: 80%;
-		padding: 10px 0;
+		width: 85%;
+		padding:0;
+		padding-top:10%;
 		margin:0 auto;
 	}
 
 	#mobile-header
 	{
 		display: block;
+		width: 100%;
+		position: relative;
 	}
 	
-	#hoverable
+	#hoverable .burger-icon
 	{
-		display: inline;
+		right:5%;
+		position: absolute;
+		top:0px;
 	}
 
 	#hoverable:hover #mobile-navbar ul
 	{
 		display: block;
 	}
+
+	#mobile-navbar-brand h2
+	{
+		display: inline;
+	}
+
 
 	#mobile-navbar
 	{
@@ -243,6 +265,8 @@ section
 		list-style: none;
 		padding: 0px;
 		margin: 0px;
+		left:45%;
+		top:-1em;
 		text-align: center;
 		background: black;
 	}
@@ -256,16 +280,13 @@ section
 		border-bottom: 1px solid white;
 	}
 
-	#mobile-navbar-brand
-	{
-		text-align: center;
-	}
-	#mobile-navbar-brand h2
-	{
-		display: inline;
-	
-	}
 
+	#mobile-navbar ul li a:hover
+	{
+		background: white;
+		color: black;
+	}
+	
 	section
 	{
 		flex-wrap: wrap;
@@ -277,9 +298,11 @@ section
 		font-size: 1.5em;
 	}
 
+	
 	#section article
 	{
 		width: 100%;
 	}
+
 
 }
