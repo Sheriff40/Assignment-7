@@ -124,47 +124,68 @@ section
 		padding: 10px 0;
 	}
 
-	
 	#mobile-header
 	{
 		display: block;
-		text-align: center;
 	}
-
-	#mobile-navbar-brand h2
+	
+	#hoverable
 	{
 		display: inline;
-	
+	}
+
+	#hoverable:hover #mobile-navbar ul
+	{
+		display: block;
+	}
+
+	#mobile-navbar
+	{
+		position: relative;
 	}
 
 	#mobile-navbar ul
 	{
+		display: none;
+		position: absolute;
+		width: 60%;
+		
+		z-index: 1;
 		list-style: none;
 		padding: 0px;
+		margin: 0px;
+		text-align: center;
+		background: black;
 	}
-
-
-	#mobile-navbar ul li
-	{
-		text-align:center;
-
-	}
-
 
 	#mobile-navbar ul li a
 	{
 		text-decoration: none;
 		color: white;
 		display: block;
-		padding: 10px 0;
+		padding: 10px;
+		border-bottom: 1px solid white;
 	}
 
+	#mobile-navbar-brand
+	{
+		text-align: center;
+	}
+	#mobile-navbar-brand h2
+	{
+		display: inline;
+	
+	}
 
 	section
 	{
 		flex-wrap: wrap;
 	}
 
+	section #article1 h2
+	{
+		font-size: 1.5em;
+	}
 	#section article
 	{
 		width: 100%;
