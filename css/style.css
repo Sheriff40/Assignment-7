@@ -126,7 +126,7 @@ section
 	body{
 		width: 95%;
 		padding:0;
-		padding-top:10%;
+		padding-top:10px;
 		margin:0 auto;
 	}
 
@@ -139,7 +139,7 @@ section
 	
 	#hoverable .burger-icon
 	{
-		right:5%;
+		right:0;
 		position: absolute;
 		top:0px;
 	}
@@ -200,13 +200,20 @@ section
 	section #article1 h2
 	{
 		font-size: 1.5em;
+	
 	}
 
 	
 	#section article
 	{
 		width: 100%;
+		
 	}
+
+	#article2
+	{
+		margin: auto;
+	}	
 
 }
 
@@ -222,7 +229,7 @@ section
 	body{
 		width: 85%;
 		padding:0;
-		padding-top:10%;
+		padding-top:15px;
 		margin:0 auto;
 	}
 
@@ -235,7 +242,7 @@ section
 	
 	#hoverable .burger-icon
 	{
-		right:5%;
+		right:0;
 		position: absolute;
 		top:0px;
 	}
@@ -296,13 +303,21 @@ section
 	section #article1 h2
 	{
 		font-size: 1.5em;
+	
 	}
 
 	
 	#section article
 	{
 		width: 100%;
+		
 	}
+
+	#article2
+	{
+		margin: auto;
+	}	
+
 
 
 }
